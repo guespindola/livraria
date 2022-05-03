@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main id="container">
+        <form action="../php/registroLivros.php" method="POST">
+            <div class="inputs">
+                <label for="">Titulo</label>
+                <input name="titulo" type="text">
+
+                <label for="">Ano</label>
+                <input name="ano" type="text">
+            </div>
+            <div class="inputs">
+                <label for="">Autor Principal</label>
+                <input name="autorPrincipal" type="text">
+
+                <label for="">Data de Registro</label>
+                <input name="dataDeRegistro" type="date">
+            </div>
+            <div class="inputs">
+                <select name="editora">
+                    <option value="0">Selecione...</option>
+                    <option value="1">A</option>
+                    <option value="2">B</option>
+                    <option value="3">C</option>
+                </select>
+
+                <input type="checkbox" name="opcoes[]" value="Romance"> Romance
+                <input type="checkbox" name="opcoes[]" value="Ficção"> Ficção
+                <input type="checkbox" name="opcoes[]" value="Mistério"> Mistério
+                <input type="checkbox" name="opcoes[]" value="Drama"> Drama
+            </div>
+            <div class="inputs">
+                <button type="reset">Limpar</button>
+                <button type="submit">Registrar</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
